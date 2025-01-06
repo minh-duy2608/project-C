@@ -634,20 +634,20 @@ int main() {
         printf("Enter your choice: ");
 
         if (scanf("%d", &choice) != 1) { 
-            printf("\tDau vao khong hop le vui long nhap so.\n");
+            printf("Dau vao khong hop le vui long nhap so.\n");
             while (getchar() != '\n'); 
             continue;
         }
 
         switch (choice) {
             case 0:
-                printf("\tBan da thoat khoi chuong trinh. \n");
+                printf("Ban da thoat khoi chuong trinh. \n");
                 break;
             case 1:
                 if (loginAccount()) {
                     menuAdmin();
                 } else {
-                    printf("\tDang nhap khong thanh cong vui long thu lai.\n");
+                    printf("Dang nhap khong thanh cong vui long thu lai.\n");
                 }
                 break;
             case 2:
